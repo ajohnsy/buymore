@@ -17,6 +17,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
+                    sh 'docker --version' // Test Docker exists
                     sh 'docker build -t buymore:1 .'
                 }
             }
