@@ -14,4 +14,15 @@ pipeline {
             }
         }
     }
+
+
+stage ('Build docker image') {
+  steps {
+      scripts {
+             sh 'docker build -t buymore:1 . '
+           }
+        }
+     } 
+
+
 }
