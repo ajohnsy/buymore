@@ -1,6 +1,6 @@
 
 # Use an official Python runtime as a parent image
-FROM python:3.8-slim
+FROM python:3.14.1-slim
 
 # Set environment variables to prevent Python from writing .pyc files
 # and to ensure output is flushed straight to terminal
